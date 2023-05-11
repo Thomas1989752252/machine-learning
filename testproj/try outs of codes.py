@@ -25,13 +25,28 @@ class Person:
 
 class Employee(Person):
     
-    def __init__(self, age, name):
+    def __init__(self, age, name, company):
         super().__init__( age, name )
+        self.company = company
         pass
+        
+    def SayName(self):
+        super().SayName()
+        print("I work at", self.company)
+        
 
-
-p2 = Employee(45, "Paul")
-p2.SayName()
+class Boss(Employee):
+    
+    def __init__(self, age, name, company, title):
+        super().__init__(age, name, company)
+        self.title = title
+        
+    def SayName(self):
+        super().SayName()
+        print("I am a big boss of level", self.title)
+        
+p3 = Boss(40, "Clay", "Amazon", "Department Executive")
+p3.SayName()
     
 
 #%%---------------------------
