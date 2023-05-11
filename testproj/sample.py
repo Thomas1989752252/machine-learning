@@ -1,10 +1,4 @@
 print("hello world")
 print("hello big world")
-print("test message---")
-# comment
+print("test message")
 
-# comment 2
-
-# comment 3
-
-# comment 4
