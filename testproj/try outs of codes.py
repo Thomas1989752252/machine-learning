@@ -194,9 +194,51 @@ import Mymodule
 
 #%%---------------------------
 
-#%%---------------------------
+# TypeError
+
+s = "alma" #str
+f = 3.14 #float
+i = 10 #int
+b = True #bool
+
+print(type(s), type(f), type(i), type(b))
+
+x = s + s
+y = i + i
+
+'''
+int operator+(int a, int b)
+{
+  return a*b;
+}
+
+int operator+(str a, str b)
+{
+  return a*b;
+}
+
+# operátor v függvénytúlterhelés (overloading)
+
+'''
+
+
+
 
 #%%---------------------------
+
+# 
+print(yyy)
+
+#%%---------------------------
+
+
+# initialize the amount variable
+amount = 10000
+
+# check that You are eligible to
+# purchase Dsa Self Paced or not
+if (amount > 2999)
+print("You are eligible to purchase Dsa Self Paced")
 
 #%%---------------------------
 
