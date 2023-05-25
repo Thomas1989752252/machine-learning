@@ -189,8 +189,16 @@ import os
 os.chdir(C:\Users\Tamás\Downloads)
 import Mymodule
 
+#%%---------------------------
+# SyntaxError
 
+# initialize the amount variable
+amount = 10000
 
+# check that You are eligible to
+# purchase Dsa Self Paced or not
+if (amount > 2999)
+print("You are eligible to purchase Dsa Self Paced")
 
 #%%---------------------------
 
@@ -226,29 +234,106 @@ int operator+(str a, str b)
 
 #%%---------------------------
 
-# 
+# NameError
 print(yyy)
 
 #%%---------------------------
 
+# IndexError
 
-# initialize the amount variable
-amount = 10000
-
-# check that You are eligible to
-# purchase Dsa Self Paced or not
-if (amount > 2999)
-print("You are eligible to purchase Dsa Self Paced")
+l = [1, 2, 3]
+x = l[5]
 
 #%%---------------------------
 
-#%%---------------------------
+# KeyError
+
+d = {}
+d["A"] = 123
+d["E"] = 124
+d["F"] = 125
+#print(d["B"])
+
+for key, value in d.items():
+    print(key, value)
+    
 
 #%%---------------------------
 
-#%%---------------------------
+# maximum selection
+
+a, b = 1, 2
+
+l = [12, -3, 8, 8, 99, 1, 2, 3]
+
+max_value = l[0]
+
+for i in l:
+    if i > max_value:
+        max_value = i
+        
+        
+        
+print(max_value)
+    
+
 
 #%%---------------------------
+
+# maximum selection
+
+a, b = 1, 2
+
+myList = [12, -3, 8, 8, 99, 1, 2, 3]
+
+s = 0
+
+for i in myList:
+    s += i
+            
+print(s)
+
+
+print(type(myList))
+n = sum(myList)
+print(n)
+ 
+
+
+s = "ssdfsdf"
+print(type(A))
+
+#%%---------------------------
+
+# FUNCTIONAL PROGRAMMING
+
+myList = [1, 2, 3, 8, 9]
+
+myList2 = []
+
+for i in myList:
+    myList2.append(i+1)
+    
+print(myList2)
+
+fun1 = (lambda x : x+1) #lambda function 
+
+def fun2(x):
+    return x+1
+
+def fun3(x):
+    return x+2
+
+def fun4(x):
+    return fun2(fun3(x))
+
+myList3 = list ( map(fun3, list( map( fun2, myList) ) ) )
+
+
+print(myList3)
+
+x = [i for i in range(100) if i%5==0] #list generator / list comprehension
+print(x)
 
 #%%---------------------------
 
